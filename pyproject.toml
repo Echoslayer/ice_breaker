@@ -1,0 +1,33 @@
+[build-system]
+
+requires = ["setuptools"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Langchain_Udemy_Course"
+
+version = "0.0.1"
+
+readme = "README.md"
+
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain",
+    "flask",
+    "tweepy",
+    "pylint",
+    "langchain-openai",
+    "langchain-community",
+    "langchain",
+    "langchain-ollama",
+    "black",
+    "python-dotenv",
+]
+
+[tool.setuptools]
+packages = ["notes", "agents", "chains", "third_parties"]
+
+[project.urls]
+Homepage = "https://github.com/Echoslayer/ice_breaker"
